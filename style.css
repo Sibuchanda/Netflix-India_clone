@@ -1,0 +1,1310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@900&family=Poppins:wght@500&family=Roboto:wght@100&family=Tektur:wght@600&family=Titillium+Web&family=Ubuntu:wght@400;500&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans:wght@900&family=Poppins:wght@500&family=Roboto:wght@100&family=Tektur:wght@600&family=Titillium+Web&family=Ubuntu&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+
+
+    font-size: 62.5%;
+}
+
+
+body {
+
+    background-color: rgb(52 51 51);
+    color: white;
+}
+
+
+
+
+/* =========================================================== HEADER SECTION ========================================= */
+
+
+
+/* ---------------------  navbar ----------------- */
+
+.header {
+
+    width: 100%;
+    height: 93vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Img/images/header-image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar #logo {
+
+    width: 14rem;
+    cursor: pointer;
+    height: 4rem;
+    margin-top: 2.4rem;
+    margin-left: 18rem;
+    filter: brightness(1.5);
+}
+
+
+.navbar .sign_in {
+
+    margin-top: 2.8rem;
+    margin-right: 18rem;
+    font-size: 1.5rem;
+
+
+
+}
+
+
+
+.sign_in .language {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid #939191e8;
+    background-color: #2a29298f;
+    padding: 0.2rem 2rem;
+    height: 3.2rem;
+    width: 13rem;
+    color: white;
+    margin: 0 2rem;
+    border-radius: 0.4rem;
+    font-size: 1.7rem;
+}
+
+.sign_in .sign-in {
+    height: 3.2rem;
+    width: 8rem;
+    color: white;
+    background-color: red;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid red;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    transition: all .3s ease-in-out;
+}
+
+.sign-in:active {
+
+    transform: translateX(6px);
+
+}
+
+.sign-in:hover {
+
+    background-color: rgba(255, 0, 0, 0.753);
+
+}
+
+
+
+/* ------------------ Heading ------------------- */
+
+.heading {
+
+
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 10rem;
+    width: 100%;
+
+}
+
+.heading1 {
+
+    font-size: 4.5rem;
+    font-weight: bolder;
+    font-family: 'Noto Sans', sans-serif;
+
+
+
+}
+
+.heading2 {
+
+    font-size: 2.5rem;
+    margin: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 100;
+}
+
+.heading3 {
+
+    font-size: 2.5rem;
+    margin: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#register {
+
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+}
+
+.input_group .register {
+
+    height: 6rem;
+    width: 40rem;
+    color: white;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    background: transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 2px;
+    /* margin-left: 13rem; */
+    background-color: #2d2a2a9e;
+}
+
+/* --------------------------- Start of animated label --------------------- */
+
+.input_group {
+
+    position: relative;
+
+}
+
+.input_group label {
+
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    pointer-events: none;
+    transition: 0.4s;
+    color: rgba(216, 211, 211, 0.725);
+}
+
+
+.input_group .register:focus~label {
+    top: 12px;
+    font-size: 1.4rem;
+    left: 4%;
+    /* background: #5653539e; */
+
+}
+
+
+input[type=email]:focus {
+    border: 3px solid #f8f4f4;
+}
+
+
+/* --------------------------- End of animated label --------------------- */
+
+
+#submit {
+
+    width: 22rem;
+    height: 6.1rem;
+    color: white;
+    background-color: red;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 0.6rem;
+    border: 1px solid red;
+    cursor: pointer;
+    margin: -0.3rem 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    transition: all .3s ease-in-out;
+
+}
+
+#submit:active {
+
+    transform: translateX(5px);
+}
+
+#submit:hover {
+
+    background-color: rgba(255, 0, 0, 0.707);
+}
+
+
+
+/* ================================== Features 1 =========================================== */
+
+
+.features1 {
+
+
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.features1 .left {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin-left: 10rem;
+}
+
+.features1 .left h1 {
+
+    font-size: 5rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.features1 .left h3 {
+
+    font-size: 2.3rem;
+    margin-top: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+
+}
+
+.features1 .right #features1 {
+
+    width: 55rem;
+    height: 44rem;
+    margin-right: 10rem;
+    cursor: pointer;
+    transition: transform .5s;
+    filter: brightness(1.2);
+
+}
+
+.features1 .right #features1:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+
+
+
+/* ================================== Features 2 =========================================== */
+
+.features2 {
+
+
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.features2 .right {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40vw;
+    /* margin-left: 10rem; */
+}
+
+
+.features2 .right h1 {
+
+    font-size: 5rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.features2 .right h3 {
+
+    font-size: 2.3rem;
+    margin-top: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+
+}
+
+.features2 .left #features2 {
+
+    width: 55rem;
+    height: 44rem;
+    margin-left: 10rem;
+    cursor: pointer;
+    transition: transform .5s;
+    filter: brightness(1.2);
+
+}
+
+.features2 .left #features2:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+
+
+/* ================================== Features 3 =========================================== */
+
+.features3 {
+
+
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.features3 .left {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin-left: 15rem;
+}
+
+.features3 .left h1 {
+
+    font-size: 5rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.features3 .left h3 {
+    font-size: 2.3rem;
+    margin-top: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+
+
+}
+
+.features3 .right #features3 {
+
+    width: 55rem;
+    height: 44rem;
+    margin-right: 10rem;
+    cursor: pointer;
+    transition: transform .5s;
+    filter: brightness(1.2);
+
+}
+
+.features3 .right #features3:hover {
+
+    transform: scale(1.03);
+
+}
+
+/* ================================== Features 4 =========================================== */
+
+
+
+.features4 {
+
+
+    width: 100vw;
+    height: 80vh;
+    background-color: black;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.features4 .right {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40vw;
+
+}
+
+
+.features4 .right h1 {
+
+    font-size: 5rem;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.features4 .right h3 {
+
+    font-size: 2.3rem;
+    margin-top: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+
+}
+
+.features4 .left #features4 {
+
+    width: 55rem;
+    height: 44rem;
+    margin-left: 10rem;
+    cursor: pointer;
+    transition: transform .5s;
+    filter: brightness(1.2);
+
+}
+
+.features4 .left #features4:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+/* ============================================ FAQ SECTION =============================================== */
+
+
+.faq {
+
+    width: 100%;
+    /* min-height: 145vh; */
+    height: auto;
+    background-color: black;
+    margin-top: 1rem;
+    padding: 10rem 12%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.faq .faq_heading {
+
+    font-size: 5rem;
+    font-family: 'Noto Sans', sans-serif;
+    /* margin-top: 5rem; */
+}
+
+.questions {
+
+    margin: 6rem auto;
+    width: 100%;
+    max-width: 119rem;
+}
+
+.faq input[type="radio"] {
+
+    display: none;
+}
+
+.faq .questions li {
+
+    list-style: none;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.faq .questions li label {
+
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-size: 2.3rem;
+    background: #212020;
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    height: 8.7rem;
+}
+
+
+.faq .questions li label:hover {
+
+    background: rgba(93, 90, 90, 0.693);
+}
+
+
+.faq .questions li label::after {
+
+    content: '+';
+    font-size: 3.4rem;
+    position: absolute;
+    right: 2rem;
+    transition: transform 0.5s;
+}
+
+
+
+.faq .questions .content {
+
+    background: #303030;
+    text-align: left;
+    padding: 0 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.faq .questions input[type="radio"]:checked+label+.content {
+
+    max-height: 60rem;
+    padding: 3rem 2rem;
+    line-height: 3rem;
+    font-size: 2.3rem;
+}
+
+
+/* .questions input[type="radio"]:checked+label+ .content{
+
+    max-height:0;
+    padding:0;
+    line-height:0;
+    font-size:0;
+} */
+
+
+.faq .questions input[type="radio"]:checked+label::after {
+
+    transform: rotate(135deg);
+}
+
+
+
+/* ======================================================================Footer SEction ======================================================== */
+
+
+
+.footer {
+
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer .footer_container {
+
+
+    width: 65vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15rem;
+}
+
+.footer .questions {
+    display: flex;
+    margin: 10rem 0;
+}
+
+.footer .questions a {
+
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    color: rgb(255 255 255 / 62%);
+}
+
+.footer .questions p {
+
+    font-size: 1.6rem;
+    color: rgb(255 255 255 / 62%);
+}
+
+.footer .questions a:hover {
+
+    color: rgba(255, 255, 255, 0.904);
+}
+
+.footer .reference {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer .para1,
+.para2,
+.para3 {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .para1 a,
+.para2 a,
+.para3 a {
+
+    font-size: 1.7rem;
+    color: rgb(255 255 255 / 62%);
+    padding: 0.8rem;
+
+}
+
+.footer .para1 a:hover,
+.para2 a:hover,
+.para3 a:hover {
+
+    color: rgba(255, 255, 255, 0.889);
+
+}
+
+
+/* -----------Bottom sign-in ---------------- */
+
+
+
+.footer_container .bottom_sign_in {
+
+    margin: 3rem 0rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+.footer_container .bottom_sign_in .language {
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid #939191e8;
+    background-color: #2a29298f;
+    padding: 0.2rem 2rem;
+    height: 3.2rem;
+    width: 13rem;
+    color: white;
+    /* margin: 0 0rem; */
+    border-radius: 0.4rem;
+    font-size: 1.7rem;
+}
+
+
+.footer_container .bottom_sign_in p {
+
+    font-size: 1.6rem;
+    margin: 2.5rem 0rem;
+}
+
+
+
+
+
+
+
+/* ========================================================== RESPONSIVE ============================================= */
+
+
+@media only screen and (max-width:1100px) {
+
+
+    html {
+
+
+        font-size: 57%;
+    }
+
+
+
+    /* ------------------ Features 1------------------- */
+
+
+    .features1 {
+
+        flex-direction: column;
+    }
+
+    .features1 .left {
+        display: flex;
+        flex-direction: column;
+        ;
+        margin-left: 0;
+    }
+
+
+    .features1 .right #features1 {
+
+        margin-right: 0;
+
+    }
+
+    /* ----------------- features 2---------------- */
+    .features2 {
+
+        flex-direction: column;
+    }
+
+    .features2 .left {
+
+        margin-left: 0;
+    }
+
+    .features2 .left #features2 {
+
+        margin-left: 0rem;
+    }
+
+
+    .features2 .right #features2 {
+
+        margin-right: 0;
+
+    }
+
+
+    /* ----------------- features 3---------------- */
+
+    .features3 {
+
+        flex-direction: column;
+    }
+
+    .features3 .left {
+        display: flex;
+        flex-direction: column;
+        ;
+        margin-left: 0;
+    }
+
+
+    .features3 .right #features3 {
+
+        margin-right: 0;
+
+    }
+
+
+    /* ----------------- features 4---------------- */
+
+    .features4 {
+
+        flex-direction: column;
+    }
+
+    .features4 .left {
+        display: flex;
+        flex-direction: column;
+        ;
+        margin-left: 0;
+    }
+
+
+    .features4 .left #features4 {
+
+        margin-left: 0rem;
+    }
+
+
+    .features4 .right #features4 {
+
+        margin-right: 0;
+
+    }
+
+
+
+    /* --------------------- Header ------------------- */
+
+    .navbar #logo {
+
+        margin-left: 2.5rem;
+
+    }
+
+    .navbar .sign_in {
+        margin-right: 5rem;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width:860px) {
+
+
+    html {
+
+
+        font-size: 55%;
+    }
+
+}
+
+@media only screen and (max-width:790px) {
+
+
+    html {
+
+
+        font-size: 48%;
+    }
+
+}
+
+@media only screen and (max-width:550px) {
+
+
+    html {
+
+
+        font-size: 46%;
+    }
+
+    #register {
+        flex-direction: column;
+    }
+
+    .input_group label {
+
+        left: 25%;
+
+    }
+
+
+
+    #submit {
+        width: 18rem;
+        height: 5.1rem;
+        font-size: 2rem;
+        margin: 3.7rem 25.5rem;
+    }
+
+
+    .input_group .register:focus~label {
+        top: 12px;
+        font-size: 1.4rem;
+        left: 26%;
+        /* background: #5653539e; */
+
+    }
+
+
+
+}
+
+
+@media only screen and (max-width:510px) {
+
+
+    #submit {
+
+        margin: 3.7rem 24rem;
+    }
+
+    .input_group label {
+
+        left: 23%;
+
+    }
+
+
+}
+
+@media only screen and (max-width:476px) {
+
+
+    #submit {
+
+        margin: 3.7rem 21rem;
+    }
+
+
+}
+
+@media only screen and (max-width:450px) {
+
+
+    #submit {
+
+        margin: 3.7rem 17rem;
+    }
+
+    .input_group label {
+
+        left: 21%;
+
+    }
+
+    .input_group .register:focus~label {
+        top: 12px;
+        font-size: 1.4rem;
+        left: 21%;
+        /* background: #5653539e; */
+
+    }
+
+
+}
+
+@media only screen and (max-width:415px) {
+
+
+    html {
+
+
+        font-size: 45%;
+    }
+
+    .header {
+        height: 70vh;
+    }
+
+
+
+    .sign_in .language {
+        height: 3.6rem;
+        width: 15rem;
+
+    }
+
+
+
+
+    .footer_container .bottom_sign_in .language {
+        height: 3.6rem;
+        width: 15rem;
+    }
+
+
+    .input_group .register {
+        height: 8rem;
+        width: 40rem;
+        font-size: 2.4rem;
+        padding-top: 2rem;
+    }
+
+
+    /* ----------------------- Features ----------------------- */
+
+
+    .features1 .left {
+        width: 70%;
+    }
+
+    .features1 .left h1 {
+        font-size: 4.6rem;
+    }
+
+
+    .features2 .right {
+        width: 70%;
+    }
+
+    .features2 .right h1 {
+        font-size: 4.6rem;
+    }
+
+
+
+    .features3 .left {
+        width: 70%;
+    }
+
+    .features3 .left h1 {
+        font-size: 4.6rem;
+    }
+
+
+    .features4 .right {
+        width: 70%;
+    }
+
+    .features4 .right h1 {
+        font-size: 4.6rem;
+    
+    }
+
+    #submit {
+
+        margin: 3.7rem 19rem;
+    }
+
+    .bottom_register #submit {
+
+        margin: 3.7rem 12rem;
+    }
+
+    .input_group label {
+
+        left: 18%;
+
+    }
+
+
+    .bottom_register .input_group label {
+
+        left: 9%;
+
+    }
+
+
+
+    .input_group .register:focus~label {
+        top: 17px;
+        font-size: 1.4rem;
+        left: 18%;
+        /* background: #5653539e; */
+
+    }
+
+    .bottom_register .input_group .register:focus~label {
+        top: 16px;
+        font-size: 1.4rem;
+        left: 9%;
+        /* background: #5653539e; */
+
+    }
+
+
+    .features1 .right #features1 {
+
+        width: 50rem;
+        height: 40rem;
+
+    }
+
+
+    .features2 .left #features2 {
+
+        width: 50rem;
+        height: 40rem;
+    }
+
+
+    .features3 .right #features3 {
+
+        width: 50rem;
+        height: 40rem;
+    }
+
+
+    .features4 .left #features4 {
+
+        width: 50rem;
+        height: 40rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width:351px) {
+
+
+    html {
+
+
+        font-size: 30%;
+    }
+
+
+    .sign_in .language {
+        height: 3.8rem;
+        width: 17rem;
+
+    }
+
+
+    #submit {
+
+        margin: 3.7rem 30rem;
+    }
+
+    .input_group label {
+
+        left: 29%;
+
+    }
+
+    .input_group .register:focus~label {
+        top: 9px;
+        font-size: 1.4rem;
+        left: 29%;
+        /* background: #5653539e; */
+
+    }
+
+
+}
+
+
+@media only screen and (max-width:251px) {
+
+
+    html {
+
+
+        font-size: 26%;
+    }
+
+
+    .sign_in .language {
+        height: 3.8rem;
+        width: 17rem;
+
+    }
+
+    #submit {
+
+        margin: 3.7rem 17rem;
+    }
+
+    .input_group label {
+
+        left: 20%;
+
+    }
+
+    .input_group .register:focus~label {
+        top: 9px;
+        font-size: 1.4rem;
+        left: 20%;
+        /* background: #5653539e; */
+
+    }
+
+
+}
+
+@media only screen and (max-width:200px) {
+
+
+    html {
+
+
+        font-size: 19%;
+    }
+
+    .sign_in .language {
+        height: 3.8rem;
+        width: 17rem;
+
+    }
+
+}
+
+@media only screen and (max-width:150px) {
+
+
+    html {
+
+
+        font-size: 14%;
+    }
+
+}
+
+@media only screen and (max-width:111px) {
+
+
+    html {
+
+
+        font-size: 9%;
+    }
+
+}
+
+
+
+
+
+/* ----------------- 2K RESOLUTION (2848 X 1152,   2848 X 1536) --------------- */
+
+
+@media screen and (min-width:2048px) {
+
+    body {
+
+        zoom: 1.3;
+    }
+
+
+    .header {
+        width: 130%;
+
+    }
+
+    .faq {
+        width: 130%;
+
+    }
+
+    .footer {
+        width: 130%;
+    }
+}
+
+
+
+
+
+/* ----------------- 4K RESOLUTION (3840 X 2160,   4896 X 22160) --------------- */
+
+@media screen and (min-width:3840px) {
+
+    body {
+
+        zoom: 2.3;
+    }
+
+
+    .header {
+        width: 228%;
+
+    }
+
+    .faq {
+        width: 228%;
+
+    }
+
+    .footer {
+        width: 228%;
+    }
+}
